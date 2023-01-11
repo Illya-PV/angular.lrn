@@ -1,0 +1,18 @@
+<div class="max-w-2xl container mx-auto pt-5">
+  <h1 class="font-bold mb-2 text-center text-lg">
+    {{
+      "hello world" +
+        "\n" +
+        date.getUTCHours() +
+        ":" +
+        +date.getUTCMinutes() +
+        ":" +
+        +date.getUTCSeconds() | uppercase
+    }}
+  </h1>
+  <h2 class="font-bold mb-2 text-center text-lg">
+    {{ "hello world" + "\n" + date | uppercase }}
+  </h2>
+
+  <app-product></app-product>
+</div>
